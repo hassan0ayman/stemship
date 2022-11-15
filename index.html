@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A website dedicated to the fascinating world of mathematics and programming">
+    <meta name="keywords" content="programming,mathematics,problems,puzzles">
+    <title>About - October Math Gems</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/logo.jpeg">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo.jpeg">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.jpeg">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+      .nav-link, .navbar-brand
+      {
+          color: black;
+      }
+    </style>
+  </head>
+<body>
+    <header class="container">
+      
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            October Math Gems</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class=" nav nav-tabs navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="archives.html">Archives</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="journals.html">Journals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="recent.html">Recent</a>
+              </li>
+              
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="content" class="container">
+      <div id="about_page">
+        <img src="images/logo.jpeg" alt="Logo" class="float-end rounded w-25" >
+        <h3>What is Math Gems Festoon?
+        </h3>
+        <p>Math Gems Festoon is a great opportunity for those wanting to sharpen their problem-solving skills by introducing carefully chosen sets of problems, ranging in difficulty from newcomers level to that of world-class solvers.</p>
+        
+        <p>Nevertheless, the Math Gems Festoon not only includes weekly problem sets but also daily selections that help you keep the flame up.</p>
+        <h3>Can anyone solve the problems?</h3>
+        <p> Problems range widely in difficulty, from basic algebra to challenging math contests questions. However, the problems are designed to require minimal prior knowledge when possible and focus more on knowing how to apply basic tools creatively to get unexpected results. While you may not be able to solve all problems in your first visit, you will certainly improve after trying many! </p>
+          <h3>How can I see my improvement?</h3>
+          <p>Our score-leaderboard system also offers you the opportunity to see how you rank amongst others and observe your improvement over time.</p>
+        
+          <p>Detailed solutions for our problems are published afterwards to ensure that everyone benefits from both his trial and the solution elegance. We also share collections of textbooks and references giving you the essential tools in your journey.</p>
+          <h3>Where can I find more problem-solving sources?</h3>
+          <p>You can find many POTWs and special handouts exclusively on our Telegram channel,
+            <a href="https://t.me/stemship" target="_blank">https://t.me/stemship</a>
+            .Moreover, we mention references and websites we recommend checking from time to time.</p>
+          </div></div> <!--end_content-->
+          </div> <!--end_container-->
+  
+          
+    </div>
+    <script src="bootstrap.js">
+          
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="application/json" id="page_expire">86400</script>
+    <script>
+        function submit_timeout() {
+            var inputs = document.getElementsByTagName("input");
+            for (var i = 0; i < inputs.length; i++) {
+               if (inputs[i].type === "submit" || inputs[i].type === "image") {
+                  inputs[i].onclick = function() {modal.style.display = "block";return false;};
+               }
+            }
+         }
+         var page_expire = 1000 * parseInt(document.getElementById('page_expire').innerHTML);
+         setTimeout(submit_timeout, page_expire);
+         var modal = document.getElementById("modal_window");
+         window.onclick = function(event) {
+            if (event.target == modal) {
+               modal.style.display = "none";
+            }
+         }
+         function toggle_navigation() {
+            if (navIcon.className == "fas fa-bars") {
+               navIcon.className = "fas fa-times";
+            } else {
+               navIcon.className = "fas fa-bars";
+            }
+         }
+         const navIcon = document.getElementById("nav_toggle_icon");
+         const navToggle = document.getElementById("nav_toggle");
+         navToggle.addEventListener("click", toggle_navigation);
+         
+    </script>
+  </body>
+</html>
