@@ -462,7 +462,9 @@ footer .container {
     transition: 0.2s;
     box-shadow: 0 0 13px white;
 }
-
+#copyright {
+    text-align: center;
+}
 @media (max-width: 900px) {
     #home-promoter .container {
         display: flex;
